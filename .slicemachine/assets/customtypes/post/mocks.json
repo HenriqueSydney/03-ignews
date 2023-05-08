@@ -1,0 +1,28 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "handle"
+  },
+  "title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "heading1",
+        "content": {
+          "text": "Equally"
+        }
+      }
+    ]
+  },
+  "content": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Nostrud esse culpa quis dolor amet velit sint nostrud commodo do exercitation est do. Veniam adipisicing non ut anim ad magna dolor officia ea nostrud ea."
+        }
+      }
+    ]
+  }
+}
