@@ -27,7 +27,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session])
-
+  console.log('oiii', post.title)
   return (
     <>
       <Head>
