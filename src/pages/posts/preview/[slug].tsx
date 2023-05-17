@@ -27,11 +27,11 @@ export default function PostPreview({ post }: PostPreviewProps) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session])
-  console.log('oiii', post.title)
+
   return (
     <>
       <Head>
-        <title>{post.title} | Ignews</title>
+        <title>{`${post.title} | Ignews`}</title>
       </Head>
 
       <main className={styles.container}>
@@ -66,7 +66,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const prismic = getPrismicClient()
 
   const response = await prismic.getByUID<any>('posts', String(slug), {})
-
   const post = {
     slug: response.uid,
     title: prismicH.asText(response.data.title),

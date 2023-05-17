@@ -19,7 +19,7 @@ export default function Post({ post }: PostProps) {
   return (
     <>
       <Head>
-        <title>{post.title} | Ignews</title>
+        <title>{`${post.title} | Ignews`}</title>
       </Head>
 
       <main className={styles.container}>
@@ -54,7 +54,6 @@ export const getServerSideProps: GetServerSideProps = async ({
   }
 
   const prismic = getPrismicClient(req)
-
   const response = await prismic.getByUID<any>('posts', String(slug), {})
 
   const post = {
